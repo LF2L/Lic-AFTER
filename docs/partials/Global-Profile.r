@@ -1,14 +1,15 @@
-# FUnction used to get the value for the comparison 
+# FUnction used to get the value for the comparison
 getmode <- function(v) {
    uniqv <- unique(v)
    uniqv[which.max(tabulate(match(v, uniqv)))]
 }
 
+#Data = AFTER
 
 # Function to create the Grafic for Climatelabs
 Fig.Global <- function(Data, ancho=750, alto=750, visible = TRUE, ...){
 
-      
+
 # Selecting the data
 Test =  Data %>% filter( Variable != "Comments")
 
@@ -22,13 +23,13 @@ Test = Test %>% group_by(Variable, University)%>% summarise(Level = getmode(Valu
 
 
 if (Test$University %>% as.factor() %>% levels() %>% length() > 1 ) {
-   
-   # Add variable Global for Consortium 
+
+   # Add variable Global for Consortium
    Climatelabs = Test %>% group_by(Variable) %>% summarise(Level = mean(Level)) %>% mutate( University= "Climate Labs Global" ) %>%
       select(Variable, University, Level)
-   
+
    Test = rbind(Test, Climatelabs)
-   
+
 }
 
 
@@ -43,7 +44,7 @@ var = length( as.factor(Test$Variable) %>% levels())
 
 
 # Organizacion de los factores por competencia
-Test$Variable = as.factor(Test$Variable) 
+Test$Variable = as.factor(Test$Variable)
 
 Test$Variable <- factor(Test$Variable, levels = Questions$Variable)
 
@@ -57,7 +58,7 @@ Test = Test %>% group_by(University) %>% mutate(degree =seq(from=0, to=360-(360/
 Test$o <- Test$Level * sin(Test$degree * pi / 180) # SOH
 Test$a <- Test$Level * cos(Test$degree * pi / 180) # CAH
 Test$X.exterior <- 5.8 * sin(Test$degree * pi / 180) # Outer ring x
-Test$Y.exterior <- 5.8 * cos(Test$degree * pi / 180) # Outer ring y 
+Test$Y.exterior <- 5.8 * cos(Test$degree * pi / 180) # Outer ring y
 
 Test$X10 <- 1 * sin(Test$degree * pi / 180) # 10% ring x
 Test$Y10 <- 1 * cos(Test$degree * pi / 180) # 10% ring y
@@ -76,9 +77,9 @@ Test = Test %>% arrange(University)
 
 p = plot_ly( )
 
-p = p %>% 
+p = p %>%
    add_trace(
-      x = c(0, Test$X.exterior[1:7], 0), y = c(0, Test$Y.exterior[1:7],0), 
+      x = c(0, Test$X.exterior[1:7], 0), y = c(0, Test$Y.exterior[1:7],0),
       color =  'rgba(255, 212, 96, 0.5)',  fillcolor = 'rgba(230, 233, 255, 0.5)',
       type = 'scatter',
       visible = TRUE,
@@ -89,9 +90,9 @@ p = p %>%
       fill = 'toself',
       hoverinfo = "text",
       name="Facilitador",
-      text = "Facilitador" ) %>% 
+      text = "Facilitador" ) %>%
    add_trace(
-      x = c(0, Test$X.exterior[8:12], 0), y = c(0, Test$Y.exterior[8:12],0), 
+      x = c(0, Test$X.exterior[8:12], 0), y = c(0, Test$Y.exterior[8:12],0),
       color =  'rgba(255, 212, 96, 0.5)',  fillcolor = 'rgba(255, 230, 232, 0.5)',
       type = 'scatter',
       visible = TRUE,
@@ -104,7 +105,7 @@ p = p %>%
       hoverinfo = "text",
       name="Maker" ) %>%
    add_trace(
-      x = c(0, Test$X.exterior[13:17], 0), y = c(0, Test$Y.exterior[13:17],0), 
+      x = c(0, Test$X.exterior[13:17], 0), y = c(0, Test$Y.exterior[13:17],0),
       color =  'rgba(255, 212, 96, 0.5)',  fillcolor = 'rgba(248, 248, 248, 0.5)',
       type = 'scatter',
       visible = TRUE,
@@ -117,7 +118,7 @@ p = p %>%
       hoverinfo = "text",
       name="Manager" ) %>%
    add_trace(
-      x = c(0, Test$X.exterior[18:23], 0), y = c(0, Test$Y.exterior[18:23],0), 
+      x = c(0, Test$X.exterior[18:23], 0), y = c(0, Test$Y.exterior[18:23],0),
       color =  'rgba(255, 212, 96, 0.5)',  fillcolor = 'rgba(233, 255, 234, 0.6)',
       type = 'scatter',
       visible = TRUE,
@@ -128,13 +129,13 @@ p = p %>%
       fill = 'toself',
       text = "Visionario",
       hoverinfo = "text",
-      name="Visionario" ) 
+      name="Visionario" )
 
-p = p %>%    
-      add_annotations( 
+p = p %>%
+      add_annotations(
                        x = c(6,6,-6,-6),
                     y = c(6,-6,-6,6),
-                    text = c("Facilitador", "Maker", "Manager", "Visionario"),
+                    text = c("Facilitateur", "Maker", "Manager", "Visionnaire"),
                     xref = "x",
                     yref = "y",
                     showarrow = F,
@@ -161,59 +162,59 @@ for(i in 1:23) {
 }
 
 # Conecting the lines
-line.final = Test[1,] 
+line.final = Test[1,]
 Test=rbind(Test,line.final)
 rm(line.final)
 
 
 Perfil =
-   p %>% 
-   add_trace(x = Test$X.exterior, y = Test$Y.exterior, 
+   p %>%
+   add_trace(x = Test$X.exterior, y = Test$Y.exterior,
              text = Test$Variable,
              hoverinfo = "text",
-             textposition = "top middle", mode = "text", 
+             textposition = "top middle", mode = "text",
              textfont = list(family= "Helvetica" ,color = '#8e8e8e', size = 13) ,
              #line = list(color = "#d3d3d3", dash = "2px", shape = "spline"),
              text = paste(Test$Descripcion ),
-             showlegend = FALSE) %>% 
-   
+             showlegend = FALSE) %>%
+
    add_trace(x = rep(0,6), y = c(0:5),
              text = c("", "Novato", "Novato Avanzado", "Competente", "Performante", "Experto"),
              textposition = "top middle", mode = "text",
              textfont = list(family= "Helvetica" ,color = '#8e8e8e', size = 13),
              showlegend = FALSE)   %>%
-   
-   add_trace(x = Test$o, y = Test$a, color = Test$University, 
+
+   add_trace(x = Test$o, y = Test$a, color = Test$University,
              mode = "lines+markers",
-             hoverinfo = "text", 
+             hoverinfo = "text",
              fill = 'toself',
              visible = visible,
              #visible = "legendonly",
              showlegend = TRUE,
-             text = paste(Test$University, Test$Level,  Test$Descripcion, sep="\n")) %>%  
-   
-   add_trace(x = Test$X10, y = Test$Y10, mode = "lines", 
-             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"), 
+             text = paste(Test$University, Test$Level,  Test$Descripcion, sep="\n")) %>%
+
+   add_trace(x = Test$X10, y = Test$Y10, mode = "lines",
+             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"),
              hoverinfo = "none",
              showlegend = FALSE) %>%
-   
-   add_trace(x = Test$X20, y = Test$Y20, mode = "lines", 
-             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"), 
+
+   add_trace(x = Test$X20, y = Test$Y20, mode = "lines",
+             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"),
              hoverinfo = "none",
              showlegend = FALSE) %>%
-   
-   add_trace(x = Test$X30, y = Test$Y30, mode = "lines", 
-             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"), 
+
+   add_trace(x = Test$X30, y = Test$Y30, mode = "lines",
+             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"),
              hoverinfo = "none",
              showlegend = FALSE) %>%
-   
-   add_trace(x = Test$X40, y = Test$Y40, mode = "lines", 
-             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"), 
+
+   add_trace(x = Test$X40, y = Test$Y40, mode = "lines",
+             line = list(color = "#d3d3d3", dash = "1px", shape = "spline"),
              hoverinfo = "none",
              showlegend = FALSE) %>%
-   
-   add_trace(x = Test$X50, y = Test$Y50, mode = "lines", 
-             line = list(color = "#d3d3d3", dash = "3px", shape = "spline"), 
+
+   add_trace(x = Test$X50, y = Test$Y50, mode = "lines",
+             line = list(color = "#d3d3d3", dash = "3px", shape = "spline"),
              hoverinfo = "none",
              showlegend = FALSE) %>%
    layout(
@@ -222,7 +223,7 @@ Perfil =
       #paper_bgcolor = "rgba(0, 0, 0, 0)",
       #fig_bgcolor   = "rgba(0, 0, 0, 0)",
       #autosize = FALSE,
-      hovermode = "closest",     
+      hovermode = "closest",
       width = ancho,
       #height = 900,
       height = alto,

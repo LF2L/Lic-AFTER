@@ -1,4 +1,4 @@
-Questions <- function(){
+Table.Questions <- function(){
 
 
   Questions =tibble(

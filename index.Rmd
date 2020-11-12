@@ -1,7 +1,7 @@
 ---
 title: "Competences pour les Tieurs-Lieux"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Nous allons discuter sur les résultats de l'enquête !
 site: distill::distill_website
 editor_options: 
   chunk_output_type: console
@@ -19,13 +19,11 @@ require(plotly)
 require(tm)
 require(SnowballC) 
 require(wordcloud)
-require(ggplot2)
-require(dplyr)
+#require(ggplot2)
+#require(dplyr)
 require(stringr)
-require(purrr)
+#require(purrr)
 require(googlesheets4)
-#setwd("~/Google Drive/Research Projects/Climate Labs ERPI/Working Packages/WP1.1/Questionnaires")   # Working directory
-
 
 source("partials/Global-Profile.r")
 source("partials/Questions-Fr.R")
@@ -42,11 +40,14 @@ source("partials/Questions-Fr.R")
 
 ```{r}
 
-# Reading data
-Data <- read_sheet("https://docs.google.com/spreadsheets/d/1BjEguc2Z24c5LufYQgvr37H0LH8zliVpBA6X2-R1gAg/edit#gid=664031741")
+# Reading data from google
+#Data <- read_sheet("https://docs.google.com/spreadsheets/d/1BjEguc2Z24c5LufYQgvr37H0LH8zliVpBA6X2-R1gAg/edit#gid=664031741")
+#write_csv2(Data, file = "Data/Respuestas-AFTER.csv")
 
-AFTER <-  Data # Data[-c(1:2), ] # Deleting tests
-AFTER = AFTER %>% melt(., id=c(1:7),  value.name = "Value") %>% as.tibble()
+
+AFTER= read_csv2("Data/Respuestas-AFTER.csv")
+#AFTER <-  Data # Data[-c(1:2), ] # Deleting tests
+AFTER = AFTER %>% melt(., id=c(1:7),  value.name = "Value") %>% as_tibble()
 
 names(AFTER) = c("Time", "Email", "Name", "University",  "Role", "Function", "Field", "Google", "Value")
 
@@ -90,47 +91,51 @@ rm(Google.Questions)
 ```
 
 
+# AFTER 2020-2021  {.unnumbered}
 
+## Objective
 
-# Instition:  Consorcio Global  {.unnumbered}
-# Objetivo 
-> Este documento es una herramienta de discusion que permita a cada Universidad identificar capacidades con respecto a los **Roles** importantes que deben ser considerados a lo largo del proyecto de *Climatelabs*
+> Le but de ce document est de présenter un outil de discussion  afin d'identifier les **Rôles** importantes à considerer et développer au sein de chaque tiers-lieu
 
-
-
-
-**Disclaimer**: En ningún momento se pretender evaluar o comparar las competencias individuales de cada participante. Por el contrario, este primer resultado permite dar primer posicionamiento de cada individuo en algun(os) rol(es) propuestos para el proyecto. 
+**attention**: Nous ne comparons pas les compétences individuelles de chaque participant. Au contraire, ce premier résultat permet de donner un premier positionnement de chaque individu dans un ou plusieurs rôles proposés pour le tiers-lieu. 
 
 ---
 
 
-
 # Méthodologie
 
-La realización del cuestionario se basó en la siguiente tabla global:
+Le questionnaire basé sur le tableau suivant:
 
-```{r Table.Questions, include=TRUE}
-Questions = Questions()
-Questions %>%
+
+```{r Table.Questions, include=TRUE , layout="l-body-outset"}
+
+Methodologie = Table.Questions()
+Methodologie = Methodologie %>% set_names( "Role", "Parametre", "Variable", "Description")
+
+Methodologie %>%
   kable() %>%
- # kable_styling(bootstrap_options = c( "hover", "condensed") ) %>%
-  collapse_rows(columns = 1:2, valign = "middle") #%>%
+  kable_styling(bootstrap_options = c( "hover", "condensed") ) %>%
+  collapse_rows(columns = 1:2, valign = "middle") 
   #collapse_rows(columns = 1, valign = "middle")
+
+#require(rmarkdown)
+#paged_table(Questions)
 
 ```
 
 ---
 
 
-# Resultados global {.tabset .tabset-pills }
+# Résultat général {.tabset .tabset-pills }
 
-En las siguientes ventanas, ustedes podran encontrar los resultados globales e individuales con respecto al cuestionario propuesto sobre los **Changemaker Leaders Team**.
 
-## Perfil Global de la Institucion 
+## Profile
 
 
 
 ```{r Perfil.global,  include=TRUE , fig.height=12, fig.align='center'}
+Questions  <- Table.Questions()
+
 A = Fig.Global(AFTER,  alto=750, visible=TRUE) # 800 x 750
 A
 
@@ -139,6 +144,26 @@ A
 #saveWidget(as_widget(A), "temp.html", selfcontained = FALSE)
 #webshot2::webshot(url = "temp.html", file= "../WP Report/partials/annex/University profile/Unicap/A.png" , vwidth = 800, vheight = 750)
 ```
+
+
+
+
+## Réferences à lire
+
+
+- Gemünden, H. G., Salomo, S., & Hölzle, K. (2007). Role Models for Radical Innovations in Times of Open Innovation. Creativity and Innovation Management, 16(4), 408–421. https://doi.org/10.1111/j.1467-8691.2007.00451.x
+
+- Goduscheit, R. C. (2014). Innovation promoters - A multiple case study. Industrial Marketing Management, 43(3), 525–534. https://doi.org/10.1016/j.indmarman.2013.12.020
+
+- Hering, D., & Phillips, J. (2005). Innovation Roles The People You Need for Successful Innovation (White Paper).
+
+- Kelley, T., & Littman, J. (2005). The ten faces of innovation : IDEO’s strategies for beating the devil’s advocate & driving creativity throughout your organization. Currency/Doubleday.
+
+- Roberts, E. B., & Fusfeld, A. R. (1980). Critical functions: Needed roles in the innovation process.
+
+- Nyström, A. G., Leminen, S., Westerlund, M., & Kortelainen, M. (2014). Actor roles and role patterns influencing innovation in living labs. Industrial Marketing Management, 43(3), 483–495. https://doi.org/10.1016/j.indmarman.2013.12.016
+
+- Wascher, E., Hebel, F., Schrot, K., & Schultze, J. (2018). Social Innovation Labs - A starting point for social innovation.
 
 
 
