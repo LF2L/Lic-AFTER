@@ -1,0 +1,2351 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #545454; font-weight: bold; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #a1024a; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007faa; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #008000; } /* Char */
+code span.cn { color: #d91e18; } /* Constant */
+code span.co { color: #545454; } /* Comment */
+code span.cv { color: #545454; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #aa5d00; } /* DataType */
+code span.dv { color: #a1024a; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #a1024a; } /* Float */
+code span.fu { color: #4254a7; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #545454; font-weight: bold; } /* Information */
+code span.kw { color: #007faa; font-weight: bold; } /* Keyword */
+code span.op { color: #696969; } /* Operator */
+code span.ot { color: #007faa; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #008000; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #008000; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #008000; } /* VerbatimString */
+code span.wa { color: #545454; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Competences pour les Tieurs-lieux: Competences pour les Tieurs-Lieux</title>
+
+  <meta property="description" itemprop="description" content="Welcome to the website. I hope you enjoy it!"/>
+
+
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Competences pour les Tieurs-lieux: Competences pour les Tieurs-Lieux"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Welcome to the website. I hope you enjoy it!"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="Competences pour les Tieurs-lieux"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Competences pour les Tieurs-lieux: Competences pour les Tieurs-Lieux"/>
+  <meta property="twitter:description" content="Welcome to the website. I hope you enjoy it!"/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site","editor_options"]}},"value":[{"type":"character","attributes":{},"value":["Competences pour les Tieurs-Lieux"]},{"type":"character","attributes":{},"value":["Welcome to the website. I hope you enjoy it!\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["chunk_output_type"]}},"value":[{"type":"character","attributes":{},"value":["console"]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  <!--radix_placeholder_navigation_in_header-->
+  <meta name="distill:offset" content=""/>
+
+  <script type="application/javascript">
+
+    window.headroom_prevent_pin = false;
+
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+
+      // responsive menu
+      $('.distill-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+
+  <style type="text/css">
+
+  /* Theme (user-documented overrideables for nav appearance) */
+
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0F2E3D;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .distill-site-nav a:hover {
+    color: white;
+  }
+
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+
+  .distill-site-header {
+
+  }
+
+  .distill-site-footer {
+
+  }
+
+
+  /* Site Header */
+
+  .distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  .distill-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+
+
+  .distill-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+
+  .distill-site-header a,
+  .distill-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+
+  .distill-site-header .title {
+    font-size: 18px;
+    min-width: 150px;
+  }
+
+  .distill-site-header .logo {
+    padding: 0;
+  }
+
+  .distill-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+  .distill-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+
+
+
+  @media screen and (min-width: 1000px) {
+    .distill-site-header .logo img {
+      display: inline-block;
+    }
+    .distill-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .distill-site-header .title {
+      padding-left: 12px;
+    }
+  }
+
+
+  .distill-site-header .nav-toggle {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-dropdown-active {
+    display: block;
+  }
+
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+    .distill-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .distill-site-header .title {
+      margin-left: 0;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 0;
+    }
+    .distill-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header.responsive {position: relative; min-height: 500px; }
+    .distill-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .distill-site-header.responsive a,
+    .distill-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .distill-site-header.responsive .nav-left,
+    .distill-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .distill-site-header.responsive .nav-dropdown {float: none;}
+    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Site Footer */
+
+  .distill-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Headroom */
+
+  d-title {
+    padding-top: 6rem;
+  }
+
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+
+  .headroom--unpinned {
+    top: -100px;
+  }
+
+  .headroom--pinned {
+    top: 0;
+  }
+
+  </style>
+
+  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+  <script type="application/javascript">
+
+  function getMeta(metaName) {
+    var metas = document.getElementsByTagName('meta');
+    for (let i = 0; i < metas.length; i++) {
+      if (metas[i].getAttribute('name') === metaName) {
+        return metas[i].getAttribute('content');
+      }
+    }
+    return '';
+  }
+
+  function offsetURL(url) {
+    var offset = getMeta('distill:offset');
+    return offset ? offset + '/' + url : url;
+  }
+
+  function createIndex() {
+    var options = {
+      keys: [
+        "title",
+        "categories",
+        "description",
+        "contents"
+      ]
+    };
+    return new window.Fuse([],options);
+  }
+
+  function createFuseIndex() {
+
+    // create fuse index
+    var options = { keys: ["title", "description", "contents"] };
+    var fuse = new window.Fuse([], options);
+
+    // fetch the main search.json
+    return fetch(offsetURL('search.json'))
+      .then(function(response) {
+        if (response.status == 200) {
+          return response.json().then(function(json) {
+            // index main articles
+            json.articles.forEach(function(article) {
+              fuse.add(article);
+            });
+            // download collections and index their articles
+            return Promise.all(json.collections.map(function(collection) {
+              return fetch(offsetURL(collection)).then(function(response) {
+                if (response.status === 200) {
+                  return response.json().then(function(articles) {
+                    articles.forEach(function(article) {
+                      fuse.add(article);
+                    });
+                  })
+                } else {
+                  return Promise.reject(
+                    new Error('Unexpected status from search index request: ' +
+                              response.status)
+                  );
+                }
+              });
+            })).then(function() {
+              return fuse;
+            });
+          });
+
+        } else {
+          return Promise.reject(
+            new Error('Unexpected status from search index request: ' +
+                        response.status)
+          );
+        }
+      });
+  }
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // get search element (bail if we don't have one)
+    var searchEl = window.document.getElementById('distill-search');
+    if (!searchEl)
+      return;
+
+    createFuseIndex()
+      .then(function(fuse) {
+
+        // make search box visible
+        searchEl.classList.remove('hidden');
+
+        // initialize autocomplete
+        var options = {
+          autoselect: true,
+          hint: false,
+          minLength: 2,
+        };
+        window.autocomplete(searchEl, options, [{
+          source: function(query, callback) {
+            const searchOptions = {
+              isCaseSensitive: false,
+              shouldSort: true,
+              minMatchCharLength: 2,
+              limit: 10,
+              keys: [
+                { name: 'title', weight: 20 },
+                { name: 'categories', weight: 15 },
+                { name: 'description', weight: 10 },
+                { name: 'contents', weight: 5 },
+              ],
+            };
+            var results = fuse.search(query, searchOptions);
+            callback(results
+              .map(function(result) { return result.item; })
+              .filter(function(item) { return !!item.description; })
+            );
+          },
+          templates: {
+            suggestion: function(suggestion) {
+              var html = `
+                <div class="search-item">
+                  <h3>${suggestion.title}</h3>
+                  <div class="search-item-description">
+                    ${suggestion.description}
+                  </div>
+                  <div class="search-item-preview">
+                    <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
+                  </div>
+                </div>
+              `;
+              return html;
+            }
+          }
+        }]).on('autocomplete:selected', function(event, suggestion) {
+          window.location.href = offsetURL(suggestion.path);
+        });
+        // remove inline display style on autocompleter (we want to
+        // manage responsive display via css)
+        $('.algolia-autocomplete').css("display", "");
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+  });
+
+  </script>
+
+  <style type="text/css">
+
+  /* Algolioa Autocomplete */
+
+  .algolia-autocomplete {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: sub;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    border: 1px #0F2E3D solid;
+    width: 180px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-nav .algolia-autocomplete {
+      display: none;
+      visibility: hidden;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete {
+      display: inline-block;
+      visibility: visible;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+      margin-left: 0;
+      width: 400px;
+      max-height: 400px;
+    }
+  }
+
+  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+    width: 90%;
+    outline: none;
+    border: none;
+  }
+
+  .algolia-autocomplete .aa-hint {
+    color: #999;
+  }
+  .algolia-autocomplete .aa-dropdown-menu {
+    width: 550px;
+    max-height: 70vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    border-top: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    cursor: pointer;
+    padding: 5px 4px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+    overflow: hidden;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.8em;
+    width: 80%;
+    margin-right: 4%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+    display: inline-block;
+    width: 15%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+    height: 3em;
+    width: auto;
+    display: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+    display: initial;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    background-color: #eee;
+  }
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  </style>
+
+
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: hidden;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure img {
+    width: 100%;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="site_libs/header-attrs-2.5.2/header-attrs.js"></script>
+  <script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+  <link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+  <script src="site_libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+  <script src="site_libs/plotly-binding-4.9.2.1/plotly.js"></script>
+  <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <link href="site_libs/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+  <script src="site_libs/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+  <link href="site_libs/plotly-htmlwidgets-css-1.52.2/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="site_libs/plotly-main-1.52.2/plotly-latest.min.js"></script>
+  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Competences pour les Tieurs-Lieux","description":"Welcome to the website. I hope you enjoy it!","authors":[]}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="index.html" class="title">Competences pour les Tieurs-lieux</a>
+</div>
+<div class="nav-right">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Competences pour les Tieurs-Lieux</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>Welcome to the website. I hope you enjoy it!</p></p>
+</div>
+
+
+<div class="d-article">
+<h1 class="unnumbered" id="instition-consorcio-global">Instition: Consorcio Global</h1>
+<h1 id="objetivo">Objetivo</h1>
+<blockquote>
+<p>Este documento es una herramienta de discusion que permita a cada Universidad identificar capacidades con respecto a los <strong>Roles</strong> importantes que deben ser considerados a lo largo del proyecto de <em>Climatelabs</em></p>
+</blockquote>
+<p><strong>Disclaimer</strong>: En ningún momento se pretender evaluar o comparar las competencias individuales de cada participante. Por el contrario, este primer resultado permite dar primer posicionamiento de cada individuo en algun(os) rol(es) propuestos para el proyecto.</p>
+<hr />
+<h1 id="méthodologie">Méthodologie</h1>
+<p>La realización del cuestionario se basó en la siguiente tabla global:</p>
+<div class="layout-chunk" data-layout="l-body">
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Role.Climatelabs
+</th>
+<th style="text-align:left;">
+Parametro
+</th>
+<th style="text-align:left;">
+Variable
+</th>
+<th style="text-align:left;">
+Descripcion
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="7">
+Facilitador
+</td>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="3">
+Modération
+</td>
+<td style="text-align:left;">
+Moderacion.1
+</td>
+<td style="text-align:left;">
+Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l’ensemble du projet en temps réel
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Moderacion.2
+</td>
+<td style="text-align:left;">
+Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Moderacion.3
+</td>
+<td style="text-align:left;">
+Appliquer des méthodes et pratiques pédagogiques pour assurer la progression des équipes et des participants
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Médiation
+</td>
+<td style="text-align:left;">
+Mediacion.1
+</td>
+<td style="text-align:left;">
+Concevoir et mettre en œuvre des stratégies de résolution des conflits
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+Participation
+</td>
+<td style="text-align:left;">
+Participacion.1
+</td>
+<td style="text-align:left;">
+Repenser les modèles de projets traditionnels sur la base des approches participatives courantes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Participacion.2
+</td>
+<td style="text-align:left;">
+Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Interculturel
+</td>
+<td style="text-align:left;">
+Intercultural
+</td>
+<td style="text-align:left;">
+Mettre en place des dispositifs permettant d’assurer l’inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="5">
+Maker
+</td>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+Méthodes de recherche et travail interdisciplinaire
+</td>
+<td style="text-align:left;">
+Met.Investigacion.1
+</td>
+<td style="text-align:left;">
+Travailler avec d’autres disciplines/acteurs de l’écosystème social
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Met.Investigacion.2
+</td>
+<td style="text-align:left;">
+Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Méthodes de conception et pensée créative
+</td>
+<td style="text-align:left;">
+Met.Diseño
+</td>
+<td style="text-align:left;">
+Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l’innovation
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Techniques du numérique et des télécommunications
+</td>
+<td style="text-align:left;">
+TIC
+</td>
+<td style="text-align:left;">
+Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pensée systémique
+</td>
+<td style="text-align:left;">
+Pens.Sistemico
+</td>
+<td style="text-align:left;">
+Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="5">
+Manager
+</td>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+Gestion de projet
+</td>
+<td style="text-align:left;">
+Gestion.1
+</td>
+<td style="text-align:left;">
+Concevoir et mettre en œuvre des projets à caractère innovant
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Gestion.2
+</td>
+<td style="text-align:left;">
+Répondre aux exigences techniques, financières et juridiques des projets
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+Auto-organisation
+</td>
+<td style="text-align:left;">
+Autogestion.1
+</td>
+<td style="text-align:left;">
+Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Autogestion.2
+</td>
+<td style="text-align:left;">
+Tener tolerancia en situaciones cada vez más ambiguas y frustrantes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Évaluation
+</td>
+<td style="text-align:left;">
+Evaluacion
+</td>
+<td style="text-align:left;">
+Concevoir et mettre en œuvre des mécanismes de saisie et d’analyse des données afin d’éclairer une stratégie donnée et de mettre en évidence ses résultats
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="6">
+Visionario
+</td>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+Networking
+</td>
+<td style="text-align:left;">
+Networking.1
+</td>
+<td style="text-align:left;">
+Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Networking.2
+</td>
+<td style="text-align:left;">
+Favoriser des rencontres pertinentes et fructueuse entre les personnes.
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+Communication
+</td>
+<td style="text-align:left;">
+Comunicacion.1
+</td>
+<td style="text-align:left;">
+Avoir de l’empathie et être ouvert aux autres points de vue en écoutant l’expérience des autres
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Comunicacion.2
+</td>
+<td style="text-align:left;">
+Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;vertical-align: middle !important;" rowspan="2">
+L’esprit entrepreneurial
+</td>
+<td style="text-align:left;">
+Pens.Emprendedor.1
+</td>
+<td style="text-align:left;">
+Gérer une entreprise ou une activité entrepreneuriale
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Pens.Emprendedor.2
+</td>
+<td style="text-align:left;">
+Recombiner les atouts et les opportunités dans le cadre d’un processus d’incubation de projet
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr />
+<h1 class="tabset tabset-pills" id="resultados-global">Resultados global</h1>
+<p>En las siguientes ventanas, ustedes podran encontrar los resultados globales e individuales con respecto al cuestionario propuesto sobre los <strong>Changemaker Leaders Team</strong>.</p>
+<h2 id="perfil-global-de-la-institucion">Perfil Global de la Institucion</h2>
+<div class="layout-chunk" data-layout="l-body">
+<div id="htmlwidget-57f1be03202a23c83077" style="width:624px;height:1152px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-57f1be03202a23c83077">{"x":{"visdat":{"15a9e35f76f26":["function () ","plotlyVisDat"]},"cur_data":"15a9e35f76f26","attrs":{"15a9e35f76f26":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,0],"y":[0,5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,0],"color":"rgba(255, 212, 96, 0.5)","fillcolor":"rgba(230, 233, 255, 0.5)","type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","hoverinfo":"text","name":"Facilitador","text":"Facilitador","inherit":true},"15a9e35f76f26.1":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,0],"y":[0,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,0],"color":"rgba(255, 212, 96, 0.5)","fillcolor":"rgba(255, 230, 232, 0.5)","type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","text":"Maker","hoverinfo":"text","name":"Maker","inherit":true},"15a9e35f76f26.2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,0],"y":[0,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,0],"color":"rgba(255, 212, 96, 0.5)","fillcolor":"rgba(248, 248, 248, 0.5)","type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","text":"Manager","hoverinfo":"text","name":"Manager","inherit":true},"15a9e35f76f26.3":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0],"y":[0,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,0],"color":"rgba(255, 212, 96, 0.5)","fillcolor":"rgba(233, 255, 234, 0.6)","type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","text":"Visionario","hoverinfo":"text","name":"Visionario","inherit":true},"15a9e35f76f26.4":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0],"y":[5.8,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.5":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[1.56482127271074,0],"y":[5.58492026661724,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Concevoir et mettre en œuvre des stratégies de résolution des conflits","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.6":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[3.01358691020551,0],"y":[4.95563254636963,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.7":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[4.23884859281312,0],"y":[3.95880823066819,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.8":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[5.14973426673378,0],"y":[2.66837721884068,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.9":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[5.67868770855747,0],"y":[1.18004487570528,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.10":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[5.78647886130513,0],"y":[-0.39580599751509,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.11":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[5.46511334828916,0],"y":[-1.94230175059172,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.12":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[4.73842537946056,0],"y":[-3.34474586826623,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Travailler avec d'autres disciplines/acteurs de l'écosystème social","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.13":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[3.66031007709111,0],"y":[-4.49912548608563,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.14":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[2.3107263211082,0],"y":[-5.31982554873163,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.15":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0.789766564758231,0],"y":[-5.74597848701072,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.16":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-0.789766564758227,0],"y":[-5.74597848701072,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.17":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-2.3107263211082,0],"y":[-5.31982554873163,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.18":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-3.6603100770911,0],"y":[-4.49912548608564,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.19":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-4.73842537946056,0],"y":[-3.34474586826623,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Concevoir et mettre en œuvre des projets à caractère innovant","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.20":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-5.46511334828916,0],"y":[-1.94230175059172,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Répondre aux exigences techniques, financières et juridiques des projets","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.21":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-5.78647886130513,0],"y":[-0.395805997515094,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.22":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-5.67868770855747,0],"y":[1.18004487570527,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.23":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-5.14973426673378,0],"y":[2.66837721884068,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.24":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-4.23884859281313,0],"y":[3.95880823066819,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Favoriser des rencontres pertinentes et fructueuse entre les personnes.","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.25":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-3.01358691020552,0],"y":[4.95563254636963,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Gérer une entreprise ou une activité entrepreneuriale","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.26":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[-1.56482127271074,0],"y":[5.58492026661724,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":"text","text":"Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet","hoverlabel":{"font":{"family":"Times New Roman"}},"inherit":true},"15a9e35f76f26.27":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0],"y":[5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,5.8],"text":["Intercultural","Mediacion.1","Moderacion.1","Moderacion.2","Moderacion.3","Participacion.1","Participacion.2","Met.Diseño","Met.Investigacion.1","Met.Investigacion.2","Pens.Sistemico","TIC","Autogestion.1","Autogestion.2","Evaluacion","Gestion.1","Gestion.2","Comunicacion.1","Comunicacion.2","Networking.1","Networking.2","Pens.Emprendedor.1","Pens.Emprendedor.2","Intercultural","Mediacion.1","Moderacion.1","Moderacion.2","Moderacion.3","Participacion.1","Participacion.2","Met.Diseño","Met.Investigacion.1","Met.Investigacion.2","Pens.Sistemico","TIC","Autogestion.1","Autogestion.2","Evaluacion","Gestion.1","Gestion.2","Comunicacion.1","Comunicacion.2","Networking.1","Networking.2","Pens.Emprendedor.1","Pens.Emprendedor.2","Intercultural","Mediacion.1","Moderacion.1","Moderacion.2","Moderacion.3","Participacion.1","Participacion.2","Met.Diseño","Met.Investigacion.1","Met.Investigacion.2","Pens.Sistemico","TIC","Autogestion.1","Autogestion.2","Evaluacion","Gestion.1","Gestion.2","Comunicacion.1","Comunicacion.2","Networking.1","Networking.2","Pens.Emprendedor.1","Pens.Emprendedor.2","Intercultural"],"hoverinfo":"text","textposition":"top middle","mode":"text","textfont":{"family":"Helvetica","color":"#8e8e8e","size":13},"showlegend":false,"inherit":true},"15a9e35f76f26.28":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0,0,0,0,0],"y":[0,1,2,3,4,5],"text":["","Novato","Novato Avanzado","Competente","Performante","Experto"],"textposition":"top middle","mode":"text","textfont":{"family":"Helvetica","color":"#8e8e8e","size":13},"showlegend":false,"inherit":true},"15a9e35f76f26.29":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0.539593542314049,1.03916790007087,2.9233438571125,1.77577043680475,1.46862613152348,2.49417192297635,2.82678276635646,1.63393978602088,2.20880780514119,0.996002724615605,0.272333298192493,-0.408499947288738,-0.996002724615602,-1.57771986081513,-1.63393978602088,-2.35565230529705,-2.99300630757162,-4.40587839457045,-1.77577043680475,-2.55792587497344,-2.59791975017718,-1.0791870846281,0,0.809390313471073,2.07833580014173,3.65417982139062,1.77577043680475,0.979084087682323,1.99533753838108,1.88452184423764,2.45090967903133,2.52435177730421,1.19520326953873,0.40849994728874,-0.68083324548123,-0.398401089846241,-0.631087944326052,-2.45090967903133,-0.94226092211882,-3.99067507676216,-4.89542043841162,-1.77577043680475,-2.19250789283438,-2.59791975017718,-0.809390313471073,0,0.269796771157024,0,2.19250789283437,1.77577043680475,1.95816817536465,2.99300630757162,3.76904368847528,0.816969893010442,1.89326383297816,0.796802179692484,0.136166649096247,-0.136166649096246,-1.59360435938496,-2.52435177730421,-0.816969893010442,-3.76904368847528,-1.99533753838108,-3.91633635072929,-1.77577043680475,-2.9233438571125,-2.59791975017718,-1.34898385578512,0],"y":[2.5,1.9258345746956,1.70883880909298,2.73021257287462,0.920130075462304,0.305184019578951,-0.170606033411677,-1.00463883651296,-1.15336064422973,-2.71498951746547,-2.29302825376363,-1.98137189207266,-2.97205783810899,-2.29302825376363,-1.93927822676105,-1.15336064422973,-0.837199030427466,-0.204727240094014,0.915552058736846,0.920130075462303,2.38893600126528,4.27209702273244,3.8516691493912,4,2.8887518620434,3.41767761818595,3.41276571609327,0.920130075462304,0.203456013052634,-0.136484826729341,-0.669759224341972,-1.7300409663446,-3.10284516281768,-2.75163390451636,-2.97205783810899,-4.95342973018165,-0.917211301505453,-0.77571129070442,-1.7300409663446,-0.334879612170986,-0.272969653458685,1.01728006526316,0.920130075462303,2.04765942965596,4.27209702273244,2.8887518620434,1,0.962917287347799,0,2.04765942965596,0.920130075462304,0.406912026105268,-0.204727240094012,-1.33951844868394,-0.576680322114867,-2.32713387211326,-1.83442260301091,-0.990685946036331,-0.990685946036331,-3.66884520602181,-3.10284516281768,-0.576680322114867,-1.33951844868395,-0.136484826729343,0.81382405221053,0.920130075462303,2.73021257287461,4.27209702273244,4.814586436739,2.5],"color":["Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","Climate Labs Global","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","kmsadpoij","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","test","Climate Labs Global"],"mode":"lines+markers","hoverinfo":"text","fill":"toself","visible":true,"showlegend":true,"text":["Climate Labs Global<br />2.5<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","Climate Labs Global<br />2<br />Concevoir et mettre en œuvre des stratégies de résolution des conflits","Climate Labs Global<br />2<br />Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","Climate Labs Global<br />4<br />Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","Climate Labs Global<br />2<br />Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","Climate Labs Global<br />1.5<br />Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","Climate Labs Global<br />2.5<br />Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","Climate Labs Global<br />3<br />Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","Climate Labs Global<br />2<br />Travailler avec d'autres disciplines/acteurs de l'écosystème social","Climate Labs Global<br />3.5<br />Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","Climate Labs Global<br />2.5<br />Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","Climate Labs Global<br />2<br />Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","Climate Labs Global<br />3<br />Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","Climate Labs Global<br />2.5<br />Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","Climate Labs Global<br />2.5<br />Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","Climate Labs Global<br />2<br />Concevoir et mettre en œuvre des projets à caractère innovant","Climate Labs Global<br />2.5<br />Répondre aux exigences techniques, financières et juridiques des projets","Climate Labs Global<br />3<br />Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","Climate Labs Global<br />4.5<br />Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","Climate Labs Global<br />2<br />Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","Climate Labs Global<br />3.5<br />Favoriser des rencontres pertinentes et fructueuse entre les personnes.","Climate Labs Global<br />5<br />Gérer une entreprise ou une activité entrepreneuriale","Climate Labs Global<br />4<br />Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet","kmsadpoij<br />4<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","kmsadpoij<br />3<br />Concevoir et mettre en œuvre des stratégies de résolution des conflits","kmsadpoij<br />4<br />Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","kmsadpoij<br />5<br />Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","kmsadpoij<br />2<br />Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","kmsadpoij<br />1<br />Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","kmsadpoij<br />2<br />Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","kmsadpoij<br />2<br />Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","kmsadpoij<br />3<br />Travailler avec d'autres disciplines/acteurs de l'écosystème social","kmsadpoij<br />4<br />Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","kmsadpoij<br />3<br />Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","kmsadpoij<br />3<br />Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","kmsadpoij<br />5<br />Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","kmsadpoij<br />1<br />Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","kmsadpoij<br />1<br />Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","kmsadpoij<br />3<br />Concevoir et mettre en œuvre des projets à caractère innovant","kmsadpoij<br />1<br />Répondre aux exigences techniques, financières et juridiques des projets","kmsadpoij<br />4<br />Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","kmsadpoij<br />5<br />Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","kmsadpoij<br />2<br />Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","kmsadpoij<br />3<br />Favoriser des rencontres pertinentes et fructueuse entre les personnes.","kmsadpoij<br />5<br />Gérer une entreprise ou une activité entrepreneuriale","kmsadpoij<br />3<br />Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet","test<br />1<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","test<br />1<br />Concevoir et mettre en œuvre des stratégies de résolution des conflits","test<br />0<br />Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","test<br />3<br />Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","test<br />2<br />Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","test<br />2<br />Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","test<br />3<br />Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","test<br />4<br />Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","test<br />1<br />Travailler avec d'autres disciplines/acteurs de l'écosystème social","test<br />3<br />Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","test<br />2<br />Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","test<br />1<br />Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","test<br />1<br />Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","test<br />4<br />Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","test<br />4<br />Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","test<br />1<br />Concevoir et mettre en œuvre des projets à caractère innovant","test<br />4<br />Répondre aux exigences techniques, financières et juridiques des projets","test<br />2<br />Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","test<br />4<br />Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","test<br />2<br />Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","test<br />4<br />Favoriser des rencontres pertinentes et fructueuse entre les personnes.","test<br />5<br />Gérer une entreprise ou une activité entrepreneuriale","test<br />5<br />Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet","Climate Labs Global<br />2.5<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence"],"inherit":true},"15a9e35f76f26.30":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0.269796771157024,0.519583950035434,0.730835964278124,0.887885218402375,0.979084087682323,0.997668769190539,0.942260922118821,0.816969893010442,0.631087944326053,0.398401089846242,0.136166649096247,-0.136166649096246,-0.398401089846241,-0.631087944326052,-0.816969893010442,-0.94226092211882,-0.997668769190539,-0.979084087682323,-0.887885218402376,-0.730835964278125,-0.519583950035435,-0.269796771157024,0,0.269796771157024,0.519583950035434,0.730835964278124,0.887885218402375,0.979084087682323,0.997668769190539,0.942260922118821,0.816969893010442,0.631087944326053,0.398401089846242,0.136166649096247,-0.136166649096246,-0.398401089846241,-0.631087944326052,-0.816969893010442,-0.94226092211882,-0.997668769190539,-0.979084087682323,-0.887885218402376,-0.730835964278125,-0.519583950035435,-0.269796771157024,0,0.269796771157024,0.519583950035434,0.730835964278124,0.887885218402375,0.979084087682323,0.997668769190539,0.942260922118821,0.816969893010442,0.631087944326053,0.398401089846242,0.136166649096247,-0.136166649096246,-0.398401089846241,-0.631087944326052,-0.816969893010442,-0.94226092211882,-0.997668769190539,-0.979084087682323,-0.887885218402376,-0.730835964278125,-0.519583950035435,-0.269796771157024,0],"y":[1,0.962917287347799,0.854419404546489,0.682553143218654,0.460065037731152,0.203456013052634,-0.0682424133646707,-0.334879612170986,-0.576680322114867,-0.775711290704419,-0.917211301505453,-0.990685946036331,-0.990685946036331,-0.917211301505453,-0.77571129070442,-0.576680322114867,-0.334879612170986,-0.0682424133646714,0.203456013052632,0.460065037731152,0.682553143218653,0.854419404546488,0.962917287347799,1,0.962917287347799,0.854419404546489,0.682553143218654,0.460065037731152,0.203456013052634,-0.0682424133646707,-0.334879612170986,-0.576680322114867,-0.775711290704419,-0.917211301505453,-0.990685946036331,-0.990685946036331,-0.917211301505453,-0.77571129070442,-0.576680322114867,-0.334879612170986,-0.0682424133646714,0.203456013052632,0.460065037731152,0.682553143218653,0.854419404546488,0.962917287347799,1,0.962917287347799,0.854419404546489,0.682553143218654,0.460065037731152,0.203456013052634,-0.0682424133646707,-0.334879612170986,-0.576680322114867,-0.775711290704419,-0.917211301505453,-0.990685946036331,-0.990685946036331,-0.917211301505453,-0.77571129070442,-0.576680322114867,-0.334879612170986,-0.0682424133646714,0.203456013052632,0.460065037731152,0.682553143218653,0.854419404546488,0.962917287347799,1],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":"none","showlegend":false,"inherit":true},"15a9e35f76f26.31":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0.539593542314049,1.03916790007087,1.46167192855625,1.77577043680475,1.95816817536465,1.99533753838108,1.88452184423764,1.63393978602088,1.26217588865211,0.796802179692484,0.272333298192493,-0.272333298192492,-0.796802179692482,-1.2621758886521,-1.63393978602088,-1.88452184423764,-1.99533753838108,-1.95816817536465,-1.77577043680475,-1.46167192855625,-1.03916790007087,-0.539593542314049,0,0.539593542314049,1.03916790007087,1.46167192855625,1.77577043680475,1.95816817536465,1.99533753838108,1.88452184423764,1.63393978602088,1.26217588865211,0.796802179692484,0.272333298192493,-0.272333298192492,-0.796802179692482,-1.2621758886521,-1.63393978602088,-1.88452184423764,-1.99533753838108,-1.95816817536465,-1.77577043680475,-1.46167192855625,-1.03916790007087,-0.539593542314049,0,0.539593542314049,1.03916790007087,1.46167192855625,1.77577043680475,1.95816817536465,1.99533753838108,1.88452184423764,1.63393978602088,1.26217588865211,0.796802179692484,0.272333298192493,-0.272333298192492,-0.796802179692482,-1.2621758886521,-1.63393978602088,-1.88452184423764,-1.99533753838108,-1.95816817536465,-1.77577043680475,-1.46167192855625,-1.03916790007087,-0.539593542314049,0],"y":[2,1.9258345746956,1.70883880909298,1.36510628643731,0.920130075462304,0.406912026105268,-0.136484826729341,-0.669759224341972,-1.15336064422973,-1.55142258140884,-1.83442260301091,-1.98137189207266,-1.98137189207266,-1.83442260301091,-1.55142258140884,-1.15336064422973,-0.669759224341973,-0.136484826729343,0.406912026105265,0.920130075462303,1.36510628643731,1.70883880909298,1.9258345746956,2,1.9258345746956,1.70883880909298,1.36510628643731,0.920130075462304,0.406912026105268,-0.136484826729341,-0.669759224341972,-1.15336064422973,-1.55142258140884,-1.83442260301091,-1.98137189207266,-1.98137189207266,-1.83442260301091,-1.55142258140884,-1.15336064422973,-0.669759224341973,-0.136484826729343,0.406912026105265,0.920130075462303,1.36510628643731,1.70883880909298,1.9258345746956,2,1.9258345746956,1.70883880909298,1.36510628643731,0.920130075462304,0.406912026105268,-0.136484826729341,-0.669759224341972,-1.15336064422973,-1.55142258140884,-1.83442260301091,-1.98137189207266,-1.98137189207266,-1.83442260301091,-1.55142258140884,-1.15336064422973,-0.669759224341973,-0.136484826729343,0.406912026105265,0.920130075462303,1.36510628643731,1.70883880909298,1.9258345746956,2],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":"none","showlegend":false,"inherit":true},"15a9e35f76f26.32":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,0.809390313471073,1.5587518501063,2.19250789283437,2.66365565520713,2.93725226304697,2.99300630757162,2.82678276635646,2.45090967903133,1.89326383297816,1.19520326953873,0.40849994728874,-0.408499947288738,-1.19520326953872,-1.89326383297816,-2.45090967903133,-2.82678276635646,-2.99300630757162,-2.93725226304697,-2.66365565520713,-2.19250789283438,-1.55875185010631,-0.809390313471073,0,0.809390313471073,1.5587518501063,2.19250789283437,2.66365565520713,2.93725226304697,2.99300630757162,2.82678276635646,2.45090967903133,1.89326383297816,1.19520326953873,0.40849994728874,-0.408499947288738,-1.19520326953872,-1.89326383297816,-2.45090967903133,-2.82678276635646,-2.99300630757162,-2.93725226304697,-2.66365565520713,-2.19250789283438,-1.55875185010631,-0.809390313471073,0,0.809390313471073,1.5587518501063,2.19250789283437,2.66365565520713,2.93725226304697,2.99300630757162,2.82678276635646,2.45090967903133,1.89326383297816,1.19520326953873,0.40849994728874,-0.408499947288738,-1.19520326953872,-1.89326383297816,-2.45090967903133,-2.82678276635646,-2.99300630757162,-2.93725226304697,-2.66365565520713,-2.19250789283438,-1.55875185010631,-0.809390313471073,0],"y":[3,2.8887518620434,2.56325821363947,2.04765942965596,1.38019511319346,0.610368039157903,-0.204727240094012,-1.00463883651296,-1.7300409663446,-2.32713387211326,-2.75163390451636,-2.97205783810899,-2.97205783810899,-2.75163390451636,-2.32713387211326,-1.7300409663446,-1.00463883651296,-0.204727240094014,0.610368039157897,1.38019511319345,2.04765942965596,2.56325821363946,2.8887518620434,3,2.8887518620434,2.56325821363947,2.04765942965596,1.38019511319346,0.610368039157903,-0.204727240094012,-1.00463883651296,-1.7300409663446,-2.32713387211326,-2.75163390451636,-2.97205783810899,-2.97205783810899,-2.75163390451636,-2.32713387211326,-1.7300409663446,-1.00463883651296,-0.204727240094014,0.610368039157897,1.38019511319345,2.04765942965596,2.56325821363946,2.8887518620434,3,2.8887518620434,2.56325821363947,2.04765942965596,1.38019511319346,0.610368039157903,-0.204727240094012,-1.00463883651296,-1.7300409663446,-2.32713387211326,-2.75163390451636,-2.97205783810899,-2.97205783810899,-2.75163390451636,-2.32713387211326,-1.7300409663446,-1.00463883651296,-0.204727240094014,0.610368039157897,1.38019511319345,2.04765942965596,2.56325821363946,2.8887518620434,3],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":"none","showlegend":false,"inherit":true},"15a9e35f76f26.33":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,1.0791870846281,2.07833580014173,2.9233438571125,3.5515408736095,3.91633635072929,3.99067507676216,3.76904368847528,3.26787957204177,2.52435177730421,1.59360435938497,0.544666596384987,-0.544666596384984,-1.59360435938496,-2.52435177730421,-3.26787957204177,-3.76904368847528,-3.99067507676216,-3.91633635072929,-3.5515408736095,-2.9233438571125,-2.07833580014174,-1.0791870846281,0,1.0791870846281,2.07833580014173,2.9233438571125,3.5515408736095,3.91633635072929,3.99067507676216,3.76904368847528,3.26787957204177,2.52435177730421,1.59360435938497,0.544666596384987,-0.544666596384984,-1.59360435938496,-2.52435177730421,-3.26787957204177,-3.76904368847528,-3.99067507676216,-3.91633635072929,-3.5515408736095,-2.9233438571125,-2.07833580014174,-1.0791870846281,0,1.0791870846281,2.07833580014173,2.9233438571125,3.5515408736095,3.91633635072929,3.99067507676216,3.76904368847528,3.26787957204177,2.52435177730421,1.59360435938497,0.544666596384987,-0.544666596384984,-1.59360435938496,-2.52435177730421,-3.26787957204177,-3.76904368847528,-3.99067507676216,-3.91633635072929,-3.5515408736095,-2.9233438571125,-2.07833580014174,-1.0791870846281,0],"y":[4,3.8516691493912,3.41767761818595,2.73021257287462,1.84026015092461,0.813824052210537,-0.272969653458683,-1.33951844868394,-2.30672128845947,-3.10284516281768,-3.66884520602181,-3.96274378414532,-3.96274378414532,-3.66884520602181,-3.10284516281768,-2.30672128845947,-1.33951844868395,-0.272969653458685,0.81382405221053,1.84026015092461,2.73021257287461,3.41767761818595,3.8516691493912,4,3.8516691493912,3.41767761818595,2.73021257287462,1.84026015092461,0.813824052210537,-0.272969653458683,-1.33951844868394,-2.30672128845947,-3.10284516281768,-3.66884520602181,-3.96274378414532,-3.96274378414532,-3.66884520602181,-3.10284516281768,-2.30672128845947,-1.33951844868395,-0.272969653458685,0.81382405221053,1.84026015092461,2.73021257287461,3.41767761818595,3.8516691493912,4,3.8516691493912,3.41767761818595,2.73021257287462,1.84026015092461,0.813824052210537,-0.272969653458683,-1.33951844868394,-2.30672128845947,-3.10284516281768,-3.66884520602181,-3.96274378414532,-3.96274378414532,-3.66884520602181,-3.10284516281768,-2.30672128845947,-1.33951844868395,-0.272969653458685,0.81382405221053,1.84026015092461,2.73021257287461,3.41767761818595,3.8516691493912,4],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":"none","showlegend":false,"inherit":true},"15a9e35f76f26.34":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":[0,1.34898385578512,2.59791975017717,3.65417982139062,4.43942609201188,4.89542043841161,4.9883438459527,4.7113046105941,4.08484946505221,3.15543972163027,1.99200544923121,0.680833245481233,-0.68083324548123,-1.9920054492312,-3.15543972163026,-4.08484946505221,-4.7113046105941,-4.9883438459527,-4.89542043841162,-4.43942609201188,-3.65417982139063,-2.59791975017718,-1.34898385578512,0,1.34898385578512,2.59791975017717,3.65417982139062,4.43942609201188,4.89542043841161,4.9883438459527,4.7113046105941,4.08484946505221,3.15543972163027,1.99200544923121,0.680833245481233,-0.68083324548123,-1.9920054492312,-3.15543972163026,-4.08484946505221,-4.7113046105941,-4.9883438459527,-4.89542043841162,-4.43942609201188,-3.65417982139063,-2.59791975017718,-1.34898385578512,0,1.34898385578512,2.59791975017717,3.65417982139062,4.43942609201188,4.89542043841161,4.9883438459527,4.7113046105941,4.08484946505221,3.15543972163027,1.99200544923121,0.680833245481233,-0.68083324548123,-1.9920054492312,-3.15543972163026,-4.08484946505221,-4.7113046105941,-4.9883438459527,-4.89542043841162,-4.43942609201188,-3.65417982139063,-2.59791975017718,-1.34898385578512,0],"y":[5,4.814586436739,4.27209702273244,3.41276571609327,2.30032518865576,1.01728006526317,-0.341212066823353,-1.67439806085493,-2.88340161057433,-3.8785564535221,-4.58605650752726,-4.95342973018165,-4.95342973018165,-4.58605650752727,-3.8785564535221,-2.88340161057434,-1.67439806085493,-0.341212066823357,1.01728006526316,2.30032518865576,3.41276571609326,4.27209702273244,4.814586436739,5,4.814586436739,4.27209702273244,3.41276571609327,2.30032518865576,1.01728006526317,-0.341212066823353,-1.67439806085493,-2.88340161057433,-3.8785564535221,-4.58605650752726,-4.95342973018165,-4.95342973018165,-4.58605650752727,-3.8785564535221,-2.88340161057434,-1.67439806085493,-0.341212066823357,1.01728006526316,2.30032518865576,3.41276571609326,4.27209702273244,4.814586436739,5,4.814586436739,4.27209702273244,3.41276571609327,2.30032518865576,1.01728006526317,-0.341212066823353,-1.67439806085493,-2.88340161057433,-3.8785564535221,-4.58605650752726,-4.95342973018165,-4.95342973018165,-4.58605650752727,-3.8785564535221,-2.88340161057434,-1.67439806085493,-0.341212066823357,1.01728006526316,2.30032518865576,3.41276571609326,4.27209702273244,4.814586436739,5],"mode":"lines","line":{"color":"#d3d3d3","dash":"3px","shape":"spline"},"hoverinfo":"none","showlegend":false,"inherit":true}},"layout":{"width":750,"height":750,"margin":{"b":40,"l":60,"t":25,"r":10},"annotations":[{"text":"Facilitador","x":6,"y":6,"xref":"x","yref":"y","showarrow":false,"font":{"color":"#264E86","family":"Palatino","size":20}},{"text":"Maker","x":6,"y":-6,"xref":"x","yref":"y","showarrow":false,"font":{"color":"#264E86","family":"Palatino","size":20}},{"text":"Manager","x":-6,"y":-6,"xref":"x","yref":"y","showarrow":false,"font":{"color":"#264E86","family":"Palatino","size":20}},{"text":"Visionario","x":-6,"y":6,"xref":"x","yref":"y","showarrow":false,"font":{"color":"#264E86","family":"Palatino","size":20}}],"legend":{"orientation":"h"},"hovermode":"closest","autosize":true,"xaxis":{"domain":[0,1],"automargin":true,"showticklabels":false,"zeroline":false,"showgrid":false,"title":[]},"yaxis":{"domain":[0,1],"automargin":true,"showticklabels":false,"zeroline":false,"showgrid":false,"title":[]},"showlegend":true},"source":"A","config":{"showSendToCloud":false},"data":[{"fillcolor":"rgba(230, 233, 255, 0.5)","x":[0,0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,0],"y":[0,5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,0],"type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","hoverinfo":["text","text","text","text","text","text","text","text","text"],"name":"Facilitador","text":["Facilitador","Facilitador","Facilitador","Facilitador","Facilitador","Facilitador","Facilitador","Facilitador","Facilitador"],"marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(255, 230, 232, 0.5)","x":[0,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,0],"y":[0,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,0],"type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","text":["Maker","Maker","Maker","Maker","Maker","Maker","Maker"],"hoverinfo":["text","text","text","text","text","text","text"],"name":"Maker","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(248, 248, 248, 0.5)","x":[0,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,0],"y":[0,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,0],"type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","text":["Manager","Manager","Manager","Manager","Manager","Manager","Manager"],"hoverinfo":["text","text","text","text","text","text","text"],"name":"Manager","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(233, 255, 234, 0.6)","x":[0,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0],"y":[0,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,0],"type":"scatter","visible":true,"showlegend":false,"mode":"lines","line":{"color":"#d3d3d3","dash":"2px"},"fill":"toself","text":["Visionario","Visionario","Visionario","Visionario","Visionario","Visionario","Visionario","Visionario"],"hoverinfo":["text","text","text","text","text","text","text","text"],"name":"Visionario","marker":{"color":"rgba(141,160,203,1)","line":{"color":"rgba(141,160,203,1)"}},"textfont":{"color":"rgba(141,160,203,1)"},"error_y":{"color":"rgba(141,160,203,1)"},"error_x":{"color":"rgba(141,160,203,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0],"y":[5.8,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[1.56482127271074,0],"y":[5.58492026661724,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Concevoir et mettre en œuvre des stratégies de résolution des conflits","Concevoir et mettre en œuvre des stratégies de résolution des conflits"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[3.01358691020551,0],"y":[4.95563254636963,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[4.23884859281312,0],"y":[3.95880823066819,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(127,127,127,1)","line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.14973426673378,0],"y":[2.66837721884068,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(188,189,34,1)","line":{"color":"rgba(188,189,34,1)"}},"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.67868770855747,0],"y":[1.18004487570528,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","Repenser les modèles de projets traditionnels sur la base des approches participatives courantes"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(23,190,207,1)","line":{"color":"rgba(23,190,207,1)"}},"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.78647886130513,0],"y":[-0.39580599751509,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[5.46511334828916,0],"y":[-1.94230175059172,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[4.73842537946056,0],"y":[-3.34474586826623,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Travailler avec d'autres disciplines/acteurs de l'écosystème social","Travailler avec d'autres disciplines/acteurs de l'écosystème social"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[3.66031007709111,0],"y":[-4.49912548608563,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[2.3107263211082,0],"y":[-5.31982554873163,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0.789766564758231,0],"y":[-5.74597848701072,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc."],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-0.789766564758227,0],"y":[-5.74597848701072,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-2.3107263211082,0],"y":[-5.31982554873163,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","Tener tolerancia en situaciones cada vez más ambiguas y frustrantes"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(127,127,127,1)","line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-3.6603100770911,0],"y":[-4.49912548608564,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(188,189,34,1)","line":{"color":"rgba(188,189,34,1)"}},"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-4.73842537946056,0],"y":[-3.34474586826623,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Concevoir et mettre en œuvre des projets à caractère innovant","Concevoir et mettre en œuvre des projets à caractère innovant"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(23,190,207,1)","line":{"color":"rgba(23,190,207,1)"}},"error_y":{"color":"rgba(23,190,207,1)"},"error_x":{"color":"rgba(23,190,207,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-5.46511334828916,0],"y":[-1.94230175059172,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Répondre aux exigences techniques, financières et juridiques des projets","Répondre aux exigences techniques, financières et juridiques des projets"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-5.78647886130513,0],"y":[-0.395805997515094,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(255,127,14,1)","line":{"color":"rgba(255,127,14,1)"}},"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-5.67868770855747,0],"y":[1.18004487570527,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-5.14973426673378,0],"y":[2.66837721884068,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc."],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-4.23884859281313,0],"y":[3.95880823066819,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Favoriser des rencontres pertinentes et fructueuse entre les personnes.","Favoriser des rencontres pertinentes et fructueuse entre les personnes."],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-3.01358691020552,0],"y":[4.95563254636963,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Gérer une entreprise ou une activité entrepreneuriale","Gérer une entreprise ou une activité entrepreneuriale"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[-1.56482127271074,0],"y":[5.58492026661724,0],"type":"scatter","line":{"color":"#d3d3d3","dash":"2px"},"showlegend":false,"hoverinfo":["text","text"],"text":["Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet","Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet"],"hoverlabel":{"font":{"family":"Times New Roman"}},"mode":"markers+lines","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0,1.56482127271074,3.01358691020551,4.23884859281312,5.14973426673378,5.67868770855747,5.78647886130513,5.46511334828916,4.73842537946056,3.66031007709111,2.3107263211082,0.789766564758231,-0.789766564758227,-2.3107263211082,-3.6603100770911,-4.73842537946056,-5.46511334828916,-5.78647886130513,-5.67868770855747,-5.14973426673378,-4.23884859281313,-3.01358691020552,-1.56482127271074,0],"y":[5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,5.8,5.58492026661724,4.95563254636963,3.95880823066819,2.66837721884068,1.18004487570528,-0.39580599751509,-1.94230175059172,-3.34474586826623,-4.49912548608563,-5.31982554873163,-5.74597848701072,-5.74597848701072,-5.31982554873163,-4.49912548608564,-3.34474586826623,-1.94230175059172,-0.395805997515094,1.18004487570527,2.66837721884068,3.95880823066819,4.95563254636963,5.58492026661724,5.8],"text":["Intercultural","Mediacion.1","Moderacion.1","Moderacion.2","Moderacion.3","Participacion.1","Participacion.2","Met.Diseño","Met.Investigacion.1","Met.Investigacion.2","Pens.Sistemico","TIC","Autogestion.1","Autogestion.2","Evaluacion","Gestion.1","Gestion.2","Comunicacion.1","Comunicacion.2","Networking.1","Networking.2","Pens.Emprendedor.1","Pens.Emprendedor.2","Intercultural","Mediacion.1","Moderacion.1","Moderacion.2","Moderacion.3","Participacion.1","Participacion.2","Met.Diseño","Met.Investigacion.1","Met.Investigacion.2","Pens.Sistemico","TIC","Autogestion.1","Autogestion.2","Evaluacion","Gestion.1","Gestion.2","Comunicacion.1","Comunicacion.2","Networking.1","Networking.2","Pens.Emprendedor.1","Pens.Emprendedor.2","Intercultural","Mediacion.1","Moderacion.1","Moderacion.2","Moderacion.3","Participacion.1","Participacion.2","Met.Diseño","Met.Investigacion.1","Met.Investigacion.2","Pens.Sistemico","TIC","Autogestion.1","Autogestion.2","Evaluacion","Gestion.1","Gestion.2","Comunicacion.1","Comunicacion.2","Networking.1","Networking.2","Pens.Emprendedor.1","Pens.Emprendedor.2","Intercultural"],"hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"textposition":["top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle","top middle"],"mode":"text","textfont":{"family":"Helvetica","color":"#8e8e8e","size":13},"showlegend":false,"type":"scatter","marker":{"color":"rgba(127,127,127,1)","line":{"color":"rgba(127,127,127,1)"}},"error_y":{"color":"rgba(127,127,127,1)"},"error_x":{"color":"rgba(127,127,127,1)"},"line":{"color":"rgba(127,127,127,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0,0,0,0,0],"y":[0,1,2,3,4,5],"text":["","Novato","Novato Avanzado","Competente","Performante","Experto"],"textposition":["top middle","top middle","top middle","top middle","top middle","top middle"],"mode":"text","textfont":{"family":"Helvetica","color":"#8e8e8e","size":13},"showlegend":false,"type":"scatter","marker":{"color":"rgba(188,189,34,1)","line":{"color":"rgba(188,189,34,1)"}},"error_y":{"color":"rgba(188,189,34,1)"},"error_x":{"color":"rgba(188,189,34,1)"},"line":{"color":"rgba(188,189,34,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(102,194,165,0.5)","x":[0,0.539593542314049,1.03916790007087,2.9233438571125,1.77577043680475,1.46862613152348,2.49417192297635,2.82678276635646,1.63393978602088,2.20880780514119,0.996002724615605,0.272333298192493,-0.408499947288738,-0.996002724615602,-1.57771986081513,-1.63393978602088,-2.35565230529705,-2.99300630757162,-4.40587839457045,-1.77577043680475,-2.55792587497344,-2.59791975017718,-1.0791870846281,0],"y":[2.5,1.9258345746956,1.70883880909298,2.73021257287462,0.920130075462304,0.305184019578951,-0.170606033411677,-1.00463883651296,-1.15336064422973,-2.71498951746547,-2.29302825376363,-1.98137189207266,-2.97205783810899,-2.29302825376363,-1.93927822676105,-1.15336064422973,-0.837199030427466,-0.204727240094014,0.915552058736846,0.920130075462303,2.38893600126528,4.27209702273244,3.8516691493912,2.5],"mode":"lines+markers","hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"fill":"toself","visible":true,"showlegend":true,"text":["Climate Labs Global<br />2.5<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","Climate Labs Global<br />2<br />Concevoir et mettre en œuvre des stratégies de résolution des conflits","Climate Labs Global<br />2<br />Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","Climate Labs Global<br />4<br />Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","Climate Labs Global<br />2<br />Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","Climate Labs Global<br />1.5<br />Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","Climate Labs Global<br />2.5<br />Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","Climate Labs Global<br />3<br />Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","Climate Labs Global<br />2<br />Travailler avec d'autres disciplines/acteurs de l'écosystème social","Climate Labs Global<br />3.5<br />Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","Climate Labs Global<br />2.5<br />Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","Climate Labs Global<br />2<br />Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","Climate Labs Global<br />3<br />Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","Climate Labs Global<br />2.5<br />Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","Climate Labs Global<br />2.5<br />Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","Climate Labs Global<br />2<br />Concevoir et mettre en œuvre des projets à caractère innovant","Climate Labs Global<br />2.5<br />Répondre aux exigences techniques, financières et juridiques des projets","Climate Labs Global<br />3<br />Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","Climate Labs Global<br />4.5<br />Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","Climate Labs Global<br />2<br />Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","Climate Labs Global<br />3.5<br />Favoriser des rencontres pertinentes et fructueuse entre les personnes.","Climate Labs Global<br />5<br />Gérer une entreprise ou une activité entrepreneuriale","Climate Labs Global<br />4<br />Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet","Climate Labs Global<br />2.5<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence"],"type":"scatter","name":"Climate Labs Global","marker":{"color":"rgba(102,194,165,1)","line":{"color":"rgba(102,194,165,1)"}},"textfont":{"color":"rgba(102,194,165,1)"},"error_y":{"color":"rgba(102,194,165,1)"},"error_x":{"color":"rgba(102,194,165,1)"},"line":{"color":"rgba(102,194,165,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(252,141,98,0.5)","x":[0,0.809390313471073,2.07833580014173,3.65417982139062,1.77577043680475,0.979084087682323,1.99533753838108,1.88452184423764,2.45090967903133,2.52435177730421,1.19520326953873,0.40849994728874,-0.68083324548123,-0.398401089846241,-0.631087944326052,-2.45090967903133,-0.94226092211882,-3.99067507676216,-4.89542043841162,-1.77577043680475,-2.19250789283438,-2.59791975017718,-0.809390313471073],"y":[4,2.8887518620434,3.41767761818595,3.41276571609327,0.920130075462304,0.203456013052634,-0.136484826729341,-0.669759224341972,-1.7300409663446,-3.10284516281768,-2.75163390451636,-2.97205783810899,-4.95342973018165,-0.917211301505453,-0.77571129070442,-1.7300409663446,-0.334879612170986,-0.272969653458685,1.01728006526316,0.920130075462303,2.04765942965596,4.27209702273244,2.8887518620434],"mode":"lines+markers","hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"fill":"toself","visible":true,"showlegend":true,"text":["kmsadpoij<br />4<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","kmsadpoij<br />3<br />Concevoir et mettre en œuvre des stratégies de résolution des conflits","kmsadpoij<br />4<br />Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","kmsadpoij<br />5<br />Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","kmsadpoij<br />2<br />Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","kmsadpoij<br />1<br />Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","kmsadpoij<br />2<br />Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","kmsadpoij<br />2<br />Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","kmsadpoij<br />3<br />Travailler avec d'autres disciplines/acteurs de l'écosystème social","kmsadpoij<br />4<br />Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","kmsadpoij<br />3<br />Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","kmsadpoij<br />3<br />Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","kmsadpoij<br />5<br />Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","kmsadpoij<br />1<br />Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","kmsadpoij<br />1<br />Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","kmsadpoij<br />3<br />Concevoir et mettre en œuvre des projets à caractère innovant","kmsadpoij<br />1<br />Répondre aux exigences techniques, financières et juridiques des projets","kmsadpoij<br />4<br />Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","kmsadpoij<br />5<br />Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","kmsadpoij<br />2<br />Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","kmsadpoij<br />3<br />Favoriser des rencontres pertinentes et fructueuse entre les personnes.","kmsadpoij<br />5<br />Gérer une entreprise ou une activité entrepreneuriale","kmsadpoij<br />3<br />Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet"],"type":"scatter","name":"kmsadpoij","marker":{"color":"rgba(252,141,98,1)","line":{"color":"rgba(252,141,98,1)"}},"textfont":{"color":"rgba(252,141,98,1)"},"error_y":{"color":"rgba(252,141,98,1)"},"error_x":{"color":"rgba(252,141,98,1)"},"line":{"color":"rgba(252,141,98,1)"},"xaxis":"x","yaxis":"y","frame":null},{"fillcolor":"rgba(231,138,195,0.5)","x":[0,0.269796771157024,0,2.19250789283437,1.77577043680475,1.95816817536465,2.99300630757162,3.76904368847528,0.816969893010442,1.89326383297816,0.796802179692484,0.136166649096247,-0.136166649096246,-1.59360435938496,-2.52435177730421,-0.816969893010442,-3.76904368847528,-1.99533753838108,-3.91633635072929,-1.77577043680475,-2.9233438571125,-2.59791975017718,-1.34898385578512],"y":[1,0.962917287347799,0,2.04765942965596,0.920130075462304,0.406912026105268,-0.204727240094012,-1.33951844868394,-0.576680322114867,-2.32713387211326,-1.83442260301091,-0.990685946036331,-0.990685946036331,-3.66884520602181,-3.10284516281768,-0.576680322114867,-1.33951844868395,-0.136484826729343,0.81382405221053,0.920130075462303,2.73021257287461,4.27209702273244,4.814586436739],"mode":"lines+markers","hoverinfo":["text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text","text"],"fill":"toself","visible":true,"showlegend":true,"text":["test<br />1<br />Mettre en place des dispositifs permettant d'assurer l'inclusion de tous, quels que soient leur culture, leur âge, leur situation économique ou leur lieu de résidence","test<br />1<br />Concevoir et mettre en œuvre des stratégies de résolution des conflits","test<br />0<br />Élaborer des stratégies émergentes pour intégrer les nouvelles connaissances et piloter l'ensemble du projet en temps réel","test<br />3<br />Aider à dessiner une vision collective, encourager les gens à partager des idées et à participer","test<br />2<br />Appliquer des méthodes et pratiques pédagogiques  pour assurer la progression des équipes et des participants","test<br />2<br />Repenser les modèles de projets traditionnels sur la base des approches participatives courantes","test<br />3<br />Mettre en place des dispositifs collaboratifs pour inviter les gens à participer aux activités du projet, les familiariser avec le projet, les accueillir et les orienter","test<br />4<br />Associer les idées et les connaissances de manière inédite, utiliser les techniques de design pour l'innovation","test<br />1<br />Travailler avec d'autres disciplines/acteurs de l'écosystème social","test<br />3<br />Appliquer des méthodes de travail/recherche différentes de celles utilisées dans ma discipline","test<br />2<br />Concevoir et mettre en œuvre des stratégies pour gérer la complexité, la pensée anticipative, et la culture du changement","test<br />1<br />Développer des prototypes technologiques appliqués via la programmation, la simulation, la modélisation, etc.","test<br />1<br />Croire en sa propre capacité à choisir une approche efficace pour mener à bien une tâche ou une activité dans des environnements de plus en plus complexes","test<br />4<br />Tener tolerancia en situaciones cada vez más ambiguas y frustrantes","test<br />4<br />Concevoir et mettre en œuvre des mécanismes de saisie et d'analyse des données afin d'éclairer une stratégie donnée et de mettre en évidence ses résultats","test<br />1<br />Concevoir et mettre en œuvre des projets à caractère innovant","test<br />4<br />Répondre aux exigences techniques, financières et juridiques des projets","test<br />2<br />Avoir de l'empathie et être ouvert aux autres points de vue en écoutant l'expérience des autres","test<br />4<br />Faire preuve de tolérance dans des situations de plus en plus complexes et contrariantes","test<br />2<br />Établir des liens et des relations avec les organisations et les entreprises locales, les organismes de financement, des associations etc.","test<br />4<br />Favoriser des rencontres pertinentes et fructueuse entre les personnes.","test<br />5<br />Gérer une entreprise ou une activité entrepreneuriale","test<br />5<br />Recombiner les atouts et les opportunités dans le cadre d'un processus d'incubation de projet"],"type":"scatter","name":"test","marker":{"color":"rgba(231,138,195,1)","line":{"color":"rgba(231,138,195,1)"}},"textfont":{"color":"rgba(231,138,195,1)"},"error_y":{"color":"rgba(231,138,195,1)"},"error_x":{"color":"rgba(231,138,195,1)"},"line":{"color":"rgba(231,138,195,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.269796771157024,0.519583950035434,0.730835964278124,0.887885218402375,0.979084087682323,0.997668769190539,0.942260922118821,0.816969893010442,0.631087944326053,0.398401089846242,0.136166649096247,-0.136166649096246,-0.398401089846241,-0.631087944326052,-0.816969893010442,-0.94226092211882,-0.997668769190539,-0.979084087682323,-0.887885218402376,-0.730835964278125,-0.519583950035435,-0.269796771157024,0,0.269796771157024,0.519583950035434,0.730835964278124,0.887885218402375,0.979084087682323,0.997668769190539,0.942260922118821,0.816969893010442,0.631087944326053,0.398401089846242,0.136166649096247,-0.136166649096246,-0.398401089846241,-0.631087944326052,-0.816969893010442,-0.94226092211882,-0.997668769190539,-0.979084087682323,-0.887885218402376,-0.730835964278125,-0.519583950035435,-0.269796771157024,0,0.269796771157024,0.519583950035434,0.730835964278124,0.887885218402375,0.979084087682323,0.997668769190539,0.942260922118821,0.816969893010442,0.631087944326053,0.398401089846242,0.136166649096247,-0.136166649096246,-0.398401089846241,-0.631087944326052,-0.816969893010442,-0.94226092211882,-0.997668769190539,-0.979084087682323,-0.887885218402376,-0.730835964278125,-0.519583950035435,-0.269796771157024,0],"y":[1,0.962917287347799,0.854419404546489,0.682553143218654,0.460065037731152,0.203456013052634,-0.0682424133646707,-0.334879612170986,-0.576680322114867,-0.775711290704419,-0.917211301505453,-0.990685946036331,-0.990685946036331,-0.917211301505453,-0.77571129070442,-0.576680322114867,-0.334879612170986,-0.0682424133646714,0.203456013052632,0.460065037731152,0.682553143218653,0.854419404546488,0.962917287347799,1,0.962917287347799,0.854419404546489,0.682553143218654,0.460065037731152,0.203456013052634,-0.0682424133646707,-0.334879612170986,-0.576680322114867,-0.775711290704419,-0.917211301505453,-0.990685946036331,-0.990685946036331,-0.917211301505453,-0.77571129070442,-0.576680322114867,-0.334879612170986,-0.0682424133646714,0.203456013052632,0.460065037731152,0.682553143218653,0.854419404546488,0.962917287347799,1,0.962917287347799,0.854419404546489,0.682553143218654,0.460065037731152,0.203456013052634,-0.0682424133646707,-0.334879612170986,-0.576680322114867,-0.775711290704419,-0.917211301505453,-0.990685946036331,-0.990685946036331,-0.917211301505453,-0.77571129070442,-0.576680322114867,-0.334879612170986,-0.0682424133646714,0.203456013052632,0.460065037731152,0.682553143218653,0.854419404546488,0.962917287347799,1],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":["none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none"],"showlegend":false,"type":"scatter","marker":{"color":"rgba(44,160,44,1)","line":{"color":"rgba(44,160,44,1)"}},"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.539593542314049,1.03916790007087,1.46167192855625,1.77577043680475,1.95816817536465,1.99533753838108,1.88452184423764,1.63393978602088,1.26217588865211,0.796802179692484,0.272333298192493,-0.272333298192492,-0.796802179692482,-1.2621758886521,-1.63393978602088,-1.88452184423764,-1.99533753838108,-1.95816817536465,-1.77577043680475,-1.46167192855625,-1.03916790007087,-0.539593542314049,0,0.539593542314049,1.03916790007087,1.46167192855625,1.77577043680475,1.95816817536465,1.99533753838108,1.88452184423764,1.63393978602088,1.26217588865211,0.796802179692484,0.272333298192493,-0.272333298192492,-0.796802179692482,-1.2621758886521,-1.63393978602088,-1.88452184423764,-1.99533753838108,-1.95816817536465,-1.77577043680475,-1.46167192855625,-1.03916790007087,-0.539593542314049,0,0.539593542314049,1.03916790007087,1.46167192855625,1.77577043680475,1.95816817536465,1.99533753838108,1.88452184423764,1.63393978602088,1.26217588865211,0.796802179692484,0.272333298192493,-0.272333298192492,-0.796802179692482,-1.2621758886521,-1.63393978602088,-1.88452184423764,-1.99533753838108,-1.95816817536465,-1.77577043680475,-1.46167192855625,-1.03916790007087,-0.539593542314049,0],"y":[2,1.9258345746956,1.70883880909298,1.36510628643731,0.920130075462304,0.406912026105268,-0.136484826729341,-0.669759224341972,-1.15336064422973,-1.55142258140884,-1.83442260301091,-1.98137189207266,-1.98137189207266,-1.83442260301091,-1.55142258140884,-1.15336064422973,-0.669759224341973,-0.136484826729343,0.406912026105265,0.920130075462303,1.36510628643731,1.70883880909298,1.9258345746956,2,1.9258345746956,1.70883880909298,1.36510628643731,0.920130075462304,0.406912026105268,-0.136484826729341,-0.669759224341972,-1.15336064422973,-1.55142258140884,-1.83442260301091,-1.98137189207266,-1.98137189207266,-1.83442260301091,-1.55142258140884,-1.15336064422973,-0.669759224341973,-0.136484826729343,0.406912026105265,0.920130075462303,1.36510628643731,1.70883880909298,1.9258345746956,2,1.9258345746956,1.70883880909298,1.36510628643731,0.920130075462304,0.406912026105268,-0.136484826729341,-0.669759224341972,-1.15336064422973,-1.55142258140884,-1.83442260301091,-1.98137189207266,-1.98137189207266,-1.83442260301091,-1.55142258140884,-1.15336064422973,-0.669759224341973,-0.136484826729343,0.406912026105265,0.920130075462303,1.36510628643731,1.70883880909298,1.9258345746956,2],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":["none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none"],"showlegend":false,"type":"scatter","marker":{"color":"rgba(214,39,40,1)","line":{"color":"rgba(214,39,40,1)"}},"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,0.809390313471073,1.5587518501063,2.19250789283437,2.66365565520713,2.93725226304697,2.99300630757162,2.82678276635646,2.45090967903133,1.89326383297816,1.19520326953873,0.40849994728874,-0.408499947288738,-1.19520326953872,-1.89326383297816,-2.45090967903133,-2.82678276635646,-2.99300630757162,-2.93725226304697,-2.66365565520713,-2.19250789283438,-1.55875185010631,-0.809390313471073,0,0.809390313471073,1.5587518501063,2.19250789283437,2.66365565520713,2.93725226304697,2.99300630757162,2.82678276635646,2.45090967903133,1.89326383297816,1.19520326953873,0.40849994728874,-0.408499947288738,-1.19520326953872,-1.89326383297816,-2.45090967903133,-2.82678276635646,-2.99300630757162,-2.93725226304697,-2.66365565520713,-2.19250789283438,-1.55875185010631,-0.809390313471073,0,0.809390313471073,1.5587518501063,2.19250789283437,2.66365565520713,2.93725226304697,2.99300630757162,2.82678276635646,2.45090967903133,1.89326383297816,1.19520326953873,0.40849994728874,-0.408499947288738,-1.19520326953872,-1.89326383297816,-2.45090967903133,-2.82678276635646,-2.99300630757162,-2.93725226304697,-2.66365565520713,-2.19250789283438,-1.55875185010631,-0.809390313471073,0],"y":[3,2.8887518620434,2.56325821363947,2.04765942965596,1.38019511319346,0.610368039157903,-0.204727240094012,-1.00463883651296,-1.7300409663446,-2.32713387211326,-2.75163390451636,-2.97205783810899,-2.97205783810899,-2.75163390451636,-2.32713387211326,-1.7300409663446,-1.00463883651296,-0.204727240094014,0.610368039157897,1.38019511319345,2.04765942965596,2.56325821363946,2.8887518620434,3,2.8887518620434,2.56325821363947,2.04765942965596,1.38019511319346,0.610368039157903,-0.204727240094012,-1.00463883651296,-1.7300409663446,-2.32713387211326,-2.75163390451636,-2.97205783810899,-2.97205783810899,-2.75163390451636,-2.32713387211326,-1.7300409663446,-1.00463883651296,-0.204727240094014,0.610368039157897,1.38019511319345,2.04765942965596,2.56325821363946,2.8887518620434,3,2.8887518620434,2.56325821363947,2.04765942965596,1.38019511319346,0.610368039157903,-0.204727240094012,-1.00463883651296,-1.7300409663446,-2.32713387211326,-2.75163390451636,-2.97205783810899,-2.97205783810899,-2.75163390451636,-2.32713387211326,-1.7300409663446,-1.00463883651296,-0.204727240094014,0.610368039157897,1.38019511319345,2.04765942965596,2.56325821363946,2.8887518620434,3],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":["none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none"],"showlegend":false,"type":"scatter","marker":{"color":"rgba(148,103,189,1)","line":{"color":"rgba(148,103,189,1)"}},"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,1.0791870846281,2.07833580014173,2.9233438571125,3.5515408736095,3.91633635072929,3.99067507676216,3.76904368847528,3.26787957204177,2.52435177730421,1.59360435938497,0.544666596384987,-0.544666596384984,-1.59360435938496,-2.52435177730421,-3.26787957204177,-3.76904368847528,-3.99067507676216,-3.91633635072929,-3.5515408736095,-2.9233438571125,-2.07833580014174,-1.0791870846281,0,1.0791870846281,2.07833580014173,2.9233438571125,3.5515408736095,3.91633635072929,3.99067507676216,3.76904368847528,3.26787957204177,2.52435177730421,1.59360435938497,0.544666596384987,-0.544666596384984,-1.59360435938496,-2.52435177730421,-3.26787957204177,-3.76904368847528,-3.99067507676216,-3.91633635072929,-3.5515408736095,-2.9233438571125,-2.07833580014174,-1.0791870846281,0,1.0791870846281,2.07833580014173,2.9233438571125,3.5515408736095,3.91633635072929,3.99067507676216,3.76904368847528,3.26787957204177,2.52435177730421,1.59360435938497,0.544666596384987,-0.544666596384984,-1.59360435938496,-2.52435177730421,-3.26787957204177,-3.76904368847528,-3.99067507676216,-3.91633635072929,-3.5515408736095,-2.9233438571125,-2.07833580014174,-1.0791870846281,0],"y":[4,3.8516691493912,3.41767761818595,2.73021257287462,1.84026015092461,0.813824052210537,-0.272969653458683,-1.33951844868394,-2.30672128845947,-3.10284516281768,-3.66884520602181,-3.96274378414532,-3.96274378414532,-3.66884520602181,-3.10284516281768,-2.30672128845947,-1.33951844868395,-0.272969653458685,0.81382405221053,1.84026015092461,2.73021257287461,3.41767761818595,3.8516691493912,4,3.8516691493912,3.41767761818595,2.73021257287462,1.84026015092461,0.813824052210537,-0.272969653458683,-1.33951844868394,-2.30672128845947,-3.10284516281768,-3.66884520602181,-3.96274378414532,-3.96274378414532,-3.66884520602181,-3.10284516281768,-2.30672128845947,-1.33951844868395,-0.272969653458685,0.81382405221053,1.84026015092461,2.73021257287461,3.41767761818595,3.8516691493912,4,3.8516691493912,3.41767761818595,2.73021257287462,1.84026015092461,0.813824052210537,-0.272969653458683,-1.33951844868394,-2.30672128845947,-3.10284516281768,-3.66884520602181,-3.96274378414532,-3.96274378414532,-3.66884520602181,-3.10284516281768,-2.30672128845947,-1.33951844868395,-0.272969653458685,0.81382405221053,1.84026015092461,2.73021257287461,3.41767761818595,3.8516691493912,4],"mode":"lines","line":{"color":"#d3d3d3","dash":"1px","shape":"spline"},"hoverinfo":["none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none"],"showlegend":false,"type":"scatter","marker":{"color":"rgba(140,86,75,1)","line":{"color":"rgba(140,86,75,1)"}},"error_y":{"color":"rgba(140,86,75,1)"},"error_x":{"color":"rgba(140,86,75,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":[0,1.34898385578512,2.59791975017717,3.65417982139062,4.43942609201188,4.89542043841161,4.9883438459527,4.7113046105941,4.08484946505221,3.15543972163027,1.99200544923121,0.680833245481233,-0.68083324548123,-1.9920054492312,-3.15543972163026,-4.08484946505221,-4.7113046105941,-4.9883438459527,-4.89542043841162,-4.43942609201188,-3.65417982139063,-2.59791975017718,-1.34898385578512,0,1.34898385578512,2.59791975017717,3.65417982139062,4.43942609201188,4.89542043841161,4.9883438459527,4.7113046105941,4.08484946505221,3.15543972163027,1.99200544923121,0.680833245481233,-0.68083324548123,-1.9920054492312,-3.15543972163026,-4.08484946505221,-4.7113046105941,-4.9883438459527,-4.89542043841162,-4.43942609201188,-3.65417982139063,-2.59791975017718,-1.34898385578512,0,1.34898385578512,2.59791975017717,3.65417982139062,4.43942609201188,4.89542043841161,4.9883438459527,4.7113046105941,4.08484946505221,3.15543972163027,1.99200544923121,0.680833245481233,-0.68083324548123,-1.9920054492312,-3.15543972163026,-4.08484946505221,-4.7113046105941,-4.9883438459527,-4.89542043841162,-4.43942609201188,-3.65417982139063,-2.59791975017718,-1.34898385578512,0],"y":[5,4.814586436739,4.27209702273244,3.41276571609327,2.30032518865576,1.01728006526317,-0.341212066823353,-1.67439806085493,-2.88340161057433,-3.8785564535221,-4.58605650752726,-4.95342973018165,-4.95342973018165,-4.58605650752727,-3.8785564535221,-2.88340161057434,-1.67439806085493,-0.341212066823357,1.01728006526316,2.30032518865576,3.41276571609326,4.27209702273244,4.814586436739,5,4.814586436739,4.27209702273244,3.41276571609327,2.30032518865576,1.01728006526317,-0.341212066823353,-1.67439806085493,-2.88340161057433,-3.8785564535221,-4.58605650752726,-4.95342973018165,-4.95342973018165,-4.58605650752727,-3.8785564535221,-2.88340161057434,-1.67439806085493,-0.341212066823357,1.01728006526316,2.30032518865576,3.41276571609326,4.27209702273244,4.814586436739,5,4.814586436739,4.27209702273244,3.41276571609327,2.30032518865576,1.01728006526317,-0.341212066823353,-1.67439806085493,-2.88340161057433,-3.8785564535221,-4.58605650752726,-4.95342973018165,-4.95342973018165,-4.58605650752727,-3.8785564535221,-2.88340161057434,-1.67439806085493,-0.341212066823357,1.01728006526316,2.30032518865576,3.41276571609326,4.27209702273244,4.814586436739,5],"mode":"lines","line":{"color":"#d3d3d3","dash":"3px","shape":"spline"},"hoverinfo":["none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none","none"],"showlegend":false,"type":"scatter","marker":{"color":"rgba(227,119,194,1)","line":{"color":"rgba(227,119,194,1)"}},"error_y":{"color":"rgba(227,119,194,1)"},"error_x":{"color":"rgba(227,119,194,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

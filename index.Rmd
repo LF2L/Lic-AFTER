@@ -1,0 +1,144 @@
+---
+title: "Competences pour les Tieurs-Lieux"
+description: |
+  Welcome to the website. I hope you enjoy it!
+site: distill::distill_website
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, include=FALSE, warning = FALSE, message = FALSE, fig.retina = 3)
+
+#Loading Packages
+require(reshape2)
+require(tidyverse)
+require(kableExtra)
+require(DT)
+require(plotly)
+require(tm)
+require(SnowballC) 
+require(wordcloud)
+require(ggplot2)
+require(dplyr)
+require(stringr)
+require(purrr)
+require(googlesheets4)
+#setwd("~/Google Drive/Research Projects/Climate Labs ERPI/Working Packages/WP1.1/Questionnaires")   # Working directory
+
+
+source("partials/Global-Profile.r")
+source("partials/Questions-Fr.R")
+# source("../Final-docs/partials/Univ-Roles.r")
+# source("../Final-docs/partials/Keywords.r")
+# source("../Final-docs/partials/Participants.r")
+# source("../Final-docs/partials/Univ-Profile.r")
+# require("yaml") 
+
+
+```
+
+
+
+```{r}
+
+# Reading data
+Data <- read_sheet("https://docs.google.com/spreadsheets/d/1BjEguc2Z24c5LufYQgvr37H0LH8zliVpBA6X2-R1gAg/edit#gid=664031741")
+
+AFTER <-  Data # Data[-c(1:2), ] # Deleting tests
+AFTER = AFTER %>% melt(., id=c(1:7),  value.name = "Value") %>% as.tibble()
+
+names(AFTER) = c("Time", "Email", "Name", "University",  "Role", "Function", "Field", "Google", "Value")
+
+
+# Integrating the questions
+Google.Questions <- tibble( Google = levels(AFTER$Google)[1:23]) # Table de compatibilidad
+
+# Adding the variable for the analysis
+Google.Questions = Google.Questions %>% mutate(Variable = case_when( 
+                    Google %in% Google.Questions$Google[1] ~ "Gestion.1" ,
+                    Google %in% Google.Questions$Google[2] ~ "Gestion.2" ,
+                    Google %in% Google.Questions$Google[3] ~ "Moderacion.1" ,
+                    Google %in% Google.Questions$Google[4] ~ "Moderacion.2" ,
+                    Google %in% Google.Questions$Google[5] ~ "Moderacion.3" ,
+                    Google %in% Google.Questions$Google[6] ~ "Mediacion.1" ,
+                    Google %in% Google.Questions$Google[7] ~ "Networking.1" ,
+                    Google %in% Google.Questions$Google[8] ~ "Networking.2" ,
+                    Google %in% Google.Questions$Google[9] ~ "Participacion.1" ,
+                    Google %in% Google.Questions$Google[10] ~ "Participacion.2" ,
+                    Google %in% Google.Questions$Google[11] ~ "Comunicacion.1" ,
+                    Google %in% Google.Questions$Google[12] ~ "Comunicacion.2" ,
+                    Google %in% Google.Questions$Google[13] ~ "Autogestion.1" ,
+                    Google %in% Google.Questions$Google[14] ~ "Autogestion.2" ,
+                    Google %in% Google.Questions$Google[15] ~ "Intercultural" ,
+                    Google %in% Google.Questions$Google[16] ~ "Evaluacion" ,
+                    Google %in% Google.Questions$Google[17] ~ "Met.Investigacion.1" ,
+                    Google %in% Google.Questions$Google[18] ~ "Met.Investigacion.2" ,
+                    Google %in% Google.Questions$Google[19] ~ "Met.Diseño" ,
+                    Google %in% Google.Questions$Google[20] ~ "TIC" ,
+                    Google %in% Google.Questions$Google[21] ~ "Pens.Emprendedor.1" ,
+                    Google %in% Google.Questions$Google[22] ~ "Pens.Emprendedor.2" ,
+                    Google %in% Google.Questions$Google[23] ~ "Pens.Sistemico" ,
+                                                TRUE ~ c(" X") )) 
+# Compatibilidad= tibble( Questions = levels(Questions$variable), Google = levels(Data$Google)[1:23]) # Table de compatibilidad
+#Data = Data %>% mutate(Variable = c("Comments"))
+
+# Joining the data
+AFTER <- left_join(AFTER, Google.Questions, by = "Google")
+
+rm(Google.Questions)
+```
+
+
+
+
+# Instition:  Consorcio Global  {.unnumbered}
+# Objetivo 
+> Este documento es una herramienta de discusion que permita a cada Universidad identificar capacidades con respecto a los **Roles** importantes que deben ser considerados a lo largo del proyecto de *Climatelabs*
+
+
+
+
+**Disclaimer**: En ningún momento se pretender evaluar o comparar las competencias individuales de cada participante. Por el contrario, este primer resultado permite dar primer posicionamiento de cada individuo en algun(os) rol(es) propuestos para el proyecto. 
+
+---
+
+
+
+# Méthodologie
+
+La realización del cuestionario se basó en la siguiente tabla global:
+
+```{r Table.Questions, include=TRUE}
+Questions = Questions()
+Questions %>%
+  kable() %>%
+ # kable_styling(bootstrap_options = c( "hover", "condensed") ) %>%
+  collapse_rows(columns = 1:2, valign = "middle") #%>%
+  #collapse_rows(columns = 1, valign = "middle")
+
+```
+
+---
+
+
+# Resultados global {.tabset .tabset-pills }
+
+En las siguientes ventanas, ustedes podran encontrar los resultados globales e individuales con respecto al cuestionario propuesto sobre los **Changemaker Leaders Team**.
+
+## Perfil Global de la Institucion 
+
+
+
+```{r Perfil.global,  include=TRUE , fig.height=12, fig.align='center'}
+A = Fig.Global(AFTER,  alto=750, visible=TRUE) # 800 x 750
+A
+
+#require(webshot2)
+# Alternative using webshot with phantomjs
+#saveWidget(as_widget(A), "temp.html", selfcontained = FALSE)
+#webshot2::webshot(url = "temp.html", file= "../WP Report/partials/annex/University profile/Unicap/A.png" , vwidth = 800, vheight = 750)
+```
+
+
+
