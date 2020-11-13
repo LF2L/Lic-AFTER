@@ -2,6 +2,19 @@
 title: "Competences pour les Tieurs-Lieux"
 description: |
   Nous allons discuter sur les résultats de l'enquête !
+date: Nov 13, 2020
+author:
+  - first_name: "Fabio"
+    last_name: "CRUZ"
+    url: https://erpi.univ-lorraine.fr/people/Fabio-Cruz/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
+    orcid_id: 
+  - first_name: "Ferney"
+    last_name: "OSORIO"
+    url: https://erpi.univ-lorraine.fr/people/Ferney-Osorio/
+    affiliation: ERPI
+    affiliation_url: https://erpi.univ-lorraine.fr/
 site: distill::distill_website
 editor_options: 
   chunk_output_type: console
@@ -46,7 +59,7 @@ source("partials/Questions-Fr.R")
 
 
 AFTER= read_csv2("Data/Respuestas-AFTER.csv")
-#AFTER <-  Data # Data[-c(1:2), ] # Deleting tests
+#AFTER <-  AFTER[-c(1:2), ] # Deleting tests
 AFTER = AFTER %>% melt(., id=c(1:7),  value.name = "Value") %>% as_tibble()
 
 names(AFTER) = c("Time", "Email", "Name", "University",  "Role", "Function", "Field", "Google", "Value")

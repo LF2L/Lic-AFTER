@@ -25,7 +25,7 @@ Test = Test %>% group_by(Variable, University)%>% summarise(Level = getmode(Valu
 if (Test$University %>% as.factor() %>% levels() %>% length() > 1 ) {
 
    # Add variable Global for Consortium
-   Climatelabs = Test %>% group_by(Variable) %>% summarise(Level = mean(Level)) %>% mutate( University= "Climate Labs Global" ) %>%
+   Climatelabs = Test %>% group_by(Variable) %>% summarise(Level = mean(Level)) %>% mutate( University= "0- Tieurs-lieu Global" ) %>%
       select(Variable, University, Level)
 
    Test = rbind(Test, Climatelabs)
@@ -179,7 +179,7 @@ Perfil =
              showlegend = FALSE) %>%
 
    add_trace(x = rep(0,6), y = c(0:5),
-             text = c("", "Novato", "Novato Avanzado", "Competente", "Performante", "Experto"),
+             text = c("", "Novice", "Novice Avancé", "Competente", "Performante", "Expert"),
              textposition = "top middle", mode = "text",
              textfont = list(family= "Helvetica" ,color = '#8e8e8e', size = 13),
              showlegend = FALSE)   %>%
