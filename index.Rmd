@@ -59,7 +59,7 @@ source("partials/Questions-Fr.R")
 
 
 AFTER= read_csv2("Data/Respuestas-AFTER.csv")
-#AFTER <-  AFTER[-c(1:2), ] # Deleting tests
+AFTER <-  AFTER[-c(1:2), ] # Deleting tests
 AFTER = AFTER %>% melt(., id=c(1:7),  value.name = "Value") %>% as_tibble()
 
 names(AFTER) = c("Time", "Email", "Name", "University",  "Role", "Function", "Field", "Google", "Value")
