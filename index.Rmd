@@ -54,11 +54,11 @@ source("partials/Questions-Fr.R")
 ```{r}
 
 # Reading data from google
-#Data <- read_sheet("https://docs.google.com/spreadsheets/d/1BjEguc2Z24c5LufYQgvr37H0LH8zliVpBA6X2-R1gAg/edit#gid=664031741")
+# Data <- read_sheet("https://docs.google.com/spreadsheets/d/1BjEguc2Z24c5LufYQgvr37H0LH8zliVpBA6X2-R1gAg/edit#gid=664031741")
 #write_csv2(Data, file = "Data/Respuestas-AFTER.csv")
 
-
-AFTER= read_csv2("Data/Respuestas-AFTER.csv")
+AFTER= read_csv("Data/Test-download.csv")
+#AFTER= read_csv2("Data/Respuestas-AFTER.csv")
 AFTER <-  AFTER[-c(1:2), ] # Deleting tests
 AFTER = AFTER %>% melt(., id=c(1:7),  value.name = "Value") %>% as_tibble()
 
@@ -117,7 +117,21 @@ rm(Google.Questions)
 
 # Méthodologie
 
-Le questionnaire basé sur le tableau suivant:
+## Echelle
+
+Evaluer chaque compétence selon les niveaux suivants :
+
+- **0** Je ne comprends pas en quoi consiste la compétence.
+- **1** Je comprends en quoi consiste la compétence et pourquoi elle est importante, mais je ne la pratique pas.
+- **2** Je pratique cette compétence sous supervision ou avec de l'encouragement. 
+- **3** Je pratique cette compétence sans supervision ni encouragement 
+- **4** J'encourage ou je supervise les autres dans cette compétence.
+- **5** Je développe de nouvelles façons d'appliquer cette compétence. Même en dehors de mon organisation
+
+
+
+
+## Questionnaire
 
 
 ```{r Table.Questions, include=TRUE , layout="l-body-outset"}
@@ -135,6 +149,11 @@ Methodologie %>%
 #paged_table(Questions)
 
 ```
+
+
+
+
+
 
 ---
 
